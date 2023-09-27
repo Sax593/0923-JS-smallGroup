@@ -13,12 +13,10 @@ function populate(size) {
     div.classList.add("pixel");
 
     div.addEventListener("mouseover", function () {
-      console.log("Click");
       if (!draw) return;
       div.style.backgroundColor = color.value;
     });
     div.addEventListener("mousdown", function () {
-      console.log("clac");
       div.style.backgroundColor = color.value;
     });
 
@@ -27,7 +25,6 @@ function populate(size) {
 }
 
 window.addEventListener("mousedown", function () {
-  console.log("clic");
   draw = true;
 });
 window.addEventListener("mouseup", function () {
